@@ -12,8 +12,8 @@
     </header>
     <main>
         <?php
-            $n = $_POST["nome"];
-            $s = $_POST["sobrenome"];
+            $n = $_POST["nome"] ?? "sem nome";
+            $s = $_POST["sobrenome"] ?? "sem sobrenome";
             echo " É um prazer te conhecer, <strong>$n $s!</strong> Este é o meu site!";
         ?>
         <p><a href="javascript:history.go(-1)">Voltar para a página anterior</a></p>
