@@ -10,7 +10,8 @@
     <?php
         date_default_timezone_set("America/Sao_Paulo");
         echo "Hoje é dia " . date("d/m/y");
-        echo "e a hora atual é " . date("G:i:s T");
+        # o T é o valor do Brasil que é -3
+        echo " e a hora atual é " . date("G:i:s T");
     ?>
 </body>
 </html>
