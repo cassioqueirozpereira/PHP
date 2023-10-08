@@ -27,30 +27,16 @@
             $divi = divisao($salario, $minimo);
 
             function divisao ($salario, $minimo) {
-                return $salario / $minimo;
+                return intdiv($salario, $minimo);
             }
 
-            $resultado_inteiro = inteiro($divi);
+            $resto = resto($salario, $minimo);
 
-            function inteiro($divi) {
-                return (int) $divi;
-            }
-
-            $resultado_fracionado = subtracao($divi, $resultado_inteiro);
-
-            function subtracao ($divi, $resultado_inteiro) {
-                return $divi - $resultado_inteiro;
-            }
-
-            
-
-            $resultado_real = verdadeiro($resultado_fracionado, $minimo);
-
-            function verdadeiro ($resultado_fracionado, $minimo) {
-                return $resultado_fracionado * $minimo;
+            function resto($salario, $minimo) {
+                return $salario % $minimo;
             }
             
-            echo "Quem recebe um salário de R$ " . number_format($salario, 2, ",", ".") . " ganha <strong>" . $resultado_inteiro . " salário(s) mínimo(s) + R$ " . number_format($resultado_real, 2, ",", ".");
+            echo "Quem recebe um salário de R$ " . number_format($salario, 2, ",", ".") . " ganha <strong>" . $divi . " salário(s) mínimo(s) + R$ " . number_format($resto, 2, ",", ".");
         ?>
     </main>
 </body>
