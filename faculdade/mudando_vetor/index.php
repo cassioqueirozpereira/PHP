@@ -14,7 +14,8 @@
 </head>
 <body>
     <form method="post">
-        Número: <input type="number" name="num" id="num">
+        <label for="num">Número: </label>
+        <input type="number" name="num" id="num">
         <input type="submit" value="add" name="oper">
         <input type="submit" value="del" name="oper">
         <input type="submit" value="sort" name="oper">
@@ -29,7 +30,7 @@
                         $valores[] = $_POST["num"];
                         break;
                     case "del":
-                        $indice = array_search($_POST["NUM"], $valores);
+                        $indice = array_search($_POST["num"], $valores);
                         if ($indice!="")
                             array_splice($valores, $indice, 1);
                         break;
