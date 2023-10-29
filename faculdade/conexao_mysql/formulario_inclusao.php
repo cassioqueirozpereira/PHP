@@ -11,17 +11,17 @@
     <form action="pagina_listagem.php" method="POST">
         <p>
             <label for="matricula">Matricula: </label>
-            <input type="text" name="matricula" class="form-control">
+            <input type="text" name="matricula" class="form-control" required>
         </p>
 
         <p>
             <label for="nome">Nome: </label>
-            <input type="text" name="nome" class="form-control">
+            <input type="text" name="nome" class="form-control" required>
         </p>
 
         <p>
             <label for="entrada">Entrada: </label>
-            <input type="number" name="entrada" class="form-control">
+            <input type="number" name="entrada" class="form-control" required>
         </p>
 
         <p>

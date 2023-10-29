@@ -11,8 +11,8 @@
                 [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
             );
             $sql = "INSERT INTO ALUNOS VALUES (?, ?, ?)";
-            $stm = $pdo->prepare($sql);
-            $stm->execute([$matricula, $nome, $entrada]);
+            $stm = $pdo -> prepare ($sql);
+            $stm -> execute ([$matricula, $nome, $entrada]);
             $mensagem = "Aluno incluido com sucesso!";
         }
         catch (PDOException $e) {
