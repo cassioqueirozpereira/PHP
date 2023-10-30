@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML - Cadastro de Clientes</title>
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https//stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- FIM BOOTSTRAP -->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="script.php" method="post">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <h3>Cadastro de Clientes</h3>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="nome">Nome: </label>
+                                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu nome" required>
+                                    </div><!--form-group-->
+                                    <div class="form-group">
+                                        <label for="cpf">CPF: </label>
+                                        <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Seu CPF" minlength="11" maxlength="11" title="Digite apenas números" required>
+                                    </div><!--form-group-->
+                                    <div class="form-group">
+                                        <label for="email">Endereço de E-mail: </label>
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Seu e-mail" aria-describedby="emailHelp" required>
+                                    </div><!--form-group-->
+                                    <div class="form-group">
+                                        <label for="nascimento">Nome: </label>
+                                        <input type="date" name="nascimento" id="nascimento" class="form-control" placeholder="Sua data de nascimento" required>
+                                    </div><!--form-group-->
+                                    <div class="form-group text-center">
+                                        <button type="submit" class="btn tbn-primary">Enviar</button>
+                                    </div><!--text-center-->
+                                </div><!--card-body-->
+                            </div><!--card-->
+                        </div><!--col-md-8-->
+                    </div><!--row-->
+                </form>
+            </div><!--col-md-12-->
+        </div><!--row-->
+    </div><!--container-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https//stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
