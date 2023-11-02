@@ -1,5 +1,5 @@
 <?php 
-    require_once "data_connection";
+    require_once "data_connection.php";
 
     class basicDAO {
         protected function execDML($sql, ...$params) {

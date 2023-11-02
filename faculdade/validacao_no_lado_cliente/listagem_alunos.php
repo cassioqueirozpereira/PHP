@@ -9,7 +9,7 @@
 <body class="container">
     <h1>Alunos</h1>
     <p>
-        <a href="formulario_inclusao.php" class="btn btn-primary">Novo Aluno</a>
+        <a href="cadastro_alunos_JS.php" class="btn btn-primary">Novo Aluno</a>
     </p>
     <?php 
         require_once 'aluno_alunoDAO.php';

@@ -1,5 +1,5 @@
 <?php 
-    require_once "basic_DAO.php";
+    require_once "classe_basicDAO.php";
 
     class Aluno {
         public $matricula;
